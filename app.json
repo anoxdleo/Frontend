@@ -24,10 +24,9 @@
       "required": true
     }
   },
-  "image": "heroku/python",
   "buildpacks": [
     {
-      "url": "heroku/python"
+      "url": "mars/create-react-app"
     }
   ]
 }
