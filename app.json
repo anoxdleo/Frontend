@@ -1,0 +1,33 @@
+{
+  "name": "WEB",
+  "description": "y",
+  "success_url": "/",
+  "env": {
+    "REACT_APP_AUTH0_CLIENT_ID": {
+      "description": "AUTH0_CLIENT_ID Value",
+      "value": "",
+      "required": true
+    },
+    "REACT_APP_AUTH0_DOMAIN": {
+      "description": "AUTH0_DOMAIN URL eg. xyz.us.auth0.com (must be without https:// & no end /)",
+      "value": "",
+      "required": false
+    },
+    "REACT_APP_BACKEND": {
+      "description": "Backend server url",
+      "value": "https://APP_NAME.herokuapp.com",
+      "required": true
+    },
+    "REACT_APP_TMDB": {
+      "description": "TMDB API KEY",
+      "value": "900",
+      "required": true
+    }
+  },
+  "image": "heroku/python",
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
